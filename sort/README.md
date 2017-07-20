@@ -1,1 +1,12 @@
 # Sorting algorithms
+- Basic sorts
+  - Inserttion Sort
+  - Selection Sort
+  - Shell sort
+- Fast sorts
+  - Quick sort
+  - Merge sort
+  - Heap sort
+- Bad sorts
+  - [Bubble sort](bubble/README.md)
+  - Slow sort
