@@ -19,7 +19,8 @@ public class AlgorithmUtil {
         .collect(toList());
   }
 
-  public static <T> void print(T t) {
+  public static <T> void print(T t, String comment) {
+    System.out.print(comment + ": ");
     Stream.of(t).forEach(e -> System.out.print(e + "\t"));
     System.out.println();
   }
