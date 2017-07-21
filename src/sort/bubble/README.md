@@ -51,7 +51,7 @@ n개의 데이터에서 2개의 인접한 데이터를 1부터 n까지 순차적
 
 # 구현
 ```java
-int[] arr = Arrays.asList(9, 5, 7, 2, 8, 1);
+int[] arr = new int[]{ 9, 5, 7, 2, 8, 1 };
 int listLength = arr.length;
 int boundary = listLength - 1;
 
