@@ -4,7 +4,7 @@ import main.template.Algorithms;
 
 import java.util.function.BiPredicate;
 
-public class Bubble<T> implements Algorithms {
+public class Bubble<T> implements Algorithms<T> {
 
   @Override
   public <T> void implement(T[] arr, BiPredicate<T, T> predicate) {
