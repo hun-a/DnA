@@ -11,11 +11,6 @@ public class Bubble<T> implements Algorithms<T> {
     bubbleSort(arr, predicate);
   }
 
-  @Override
-  public <T> T[] init() {
-    return (T[])(new String[]{"Z", "E", "A", "H", "W", "G", "B"});
-  }
-
   private <T> T[] bubbleSort(T[] arr, BiPredicate<T, T> test) {
     int listLength = arr.length;
     int boundary = listLength - 1;
