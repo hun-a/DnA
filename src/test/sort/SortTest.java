@@ -4,10 +4,10 @@ import main.template.Algorithms;
 import org.junit.*;
 
 import java.util.Comparator;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 import main.sort.bubble.Bubble;
+import test.util.TestUtil;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.CoreMatchers.*;
@@ -24,8 +24,8 @@ public class SortTest {
     Integer[] result = Stream.of(arr).sorted().toArray(Integer[]::new);
     bubble.implement(arr, bubble::asc);
 
-    IntStream.rangeClosed(0, arr.length - 1)
-      .forEach((i) -> assertThat(arr[i], is(result[i])));
+    boolean testResult = TestUtil.isSame(arr, result);
+    assertThat(testResult, is(equalTo(true)));
   }
 
   @Test
@@ -36,7 +36,7 @@ public class SortTest {
       .toArray(Integer[]::new);
     bubble.implement(arr, bubble::desc);
 
-    IntStream.rangeClosed(0, arr.length - 1)
-      .forEach((i) -> assertThat(arr[i], is(result[i])));
+    boolean testResult = TestUtil.isSame(arr, result);
+    assertThat(testResult, is(equalTo(true)));
   }
 }
