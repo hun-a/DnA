@@ -1,4 +1,4 @@
-package template;
+package main.template;
 
 import java.util.function.BiPredicate;
 

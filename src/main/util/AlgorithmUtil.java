@@ -1,6 +1,6 @@
-package util;
+package main.util;
 
-import template.Algorithms;
+import main.template.Algorithms;
 
 import java.util.stream.Stream;
 

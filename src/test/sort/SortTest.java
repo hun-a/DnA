@@ -1,10 +1,11 @@
 package test.sort;
 
 import org.junit.*;
-import sort.bubble.Bubble;
 
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+
+import main.sort.bubble.Bubble;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.CoreMatchers.*;

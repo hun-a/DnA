@@ -2,10 +2,10 @@ apply plugin: 'java'
 
 sourceSets {
 	main {
-		java.srcDirs = ['src']
+		java.srcDir 'src/main'
 	}
 	test {
-		java.srcDirs = ['src', 'test']
+		java.srcDir 'src/test'
 	}
 }
 

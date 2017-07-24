@@ -1,6 +1,6 @@
-package sort.bubble;
+package main.sort.bubble;
 
-import template.Algorithms;
+import main.template.Algorithms;
 
 import java.util.function.BiPredicate;
 
