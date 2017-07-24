@@ -1,6 +1,6 @@
 # Sorting algorithms
 - Basic sorts
-  - Inserttion Sort
+  - Insertion Sort
   - Selection Sort
   - Shell sort
 - Fast sorts
