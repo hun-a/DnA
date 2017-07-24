@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 /**
 * Created by hun on 21/07/2017.
 */
-public class AlgorithmUtil {
+public class AlgorithmUtil<T> {
 
   public static <T> void print(T t, String comment) {
     System.out.print(comment + ": ");

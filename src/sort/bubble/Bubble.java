@@ -4,7 +4,7 @@ import template.Algorithms;
 
 import java.util.function.BiPredicate;
 
-public class Bubble implements Algorithms {
+public class Bubble<T> implements Algorithms {
 
   @Override
   public <T> void implement(T[] arr, BiPredicate<T, T> predicate) {
@@ -13,7 +13,7 @@ public class Bubble implements Algorithms {
 
   @Override
   public <T> T[] init() {
-    return null;
+    return (T[])(new String[]{"Z", "E", "A", "H", "W", "G", "B"});
   }
 
   private <T> T[] bubbleSort(T[] arr, BiPredicate<T, T> test) {
