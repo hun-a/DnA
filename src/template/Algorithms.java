@@ -1,12 +1,17 @@
 package template;
 
+import java.util.function.BiPredicate;
+
 /**
  * Created by hun on 21/07/2017.
  */
 public interface Algorithms {
-  default void run() {
-    implement();
+  <T> void implement(T[] arr, BiPredicate<T, T> predicate);
+  <T> T[] init();
+  default <T> boolean asc(T t1, T t2) {
+    return (t1.hashCode() - t2.hashCode() > 0) ? true : false;
   }
-  void init();
-  void implement();
+  default <T> boolean desc(T t1, T t2) {
+    return (t1.hashCode() - t2.hashCode() < 0) ? true : false;
+  }
  }
