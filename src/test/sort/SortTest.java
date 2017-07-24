@@ -3,6 +3,7 @@ package test.sort;
 import main.template.Algorithms;
 import org.junit.*;
 
+import java.util.Comparator;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -19,7 +20,6 @@ public class SortTest {
 
   @Test
   public void bubbleAscTest() {
-
     Algorithms<Integer> bubble = new Bubble<>();
     Integer[] result = Stream.of(arr).sorted().toArray(Integer[]::new);
     bubble.implement(arr, bubble::asc);
@@ -32,7 +32,7 @@ public class SortTest {
   public void bubbleDescTest() {
     Algorithms<Integer> bubble = new Bubble<>();
     Integer[] result = Stream.of(arr)
-      .sorted((i, j) -> j.intValue() - i.intValue())
+      .sorted(Comparator.comparing(Integer::intValue).reversed())
       .toArray(Integer[]::new);
     bubble.implement(arr, bubble::desc);
 
