@@ -1,5 +1,6 @@
 package test.sort;
 
+import main.sort.insertion.Insertion;
 import main.template.Algorithms;
 import org.junit.*;
 
@@ -35,6 +36,28 @@ public class SortTest {
       .sorted(Comparator.comparing(Integer::intValue).reversed())
       .toArray(Integer[]::new);
     bubble.implement(arr, bubble::desc);
+
+    boolean testResult = TestUtil.isSame(arr, result);
+    assertThat(testResult, is(equalTo(true)));
+  }
+
+  @Test
+  public void insertionAscTest() {
+    Algorithms<Integer> insertion = new Insertion<>();
+    Integer[] result = Stream.of(arr).sorted().toArray(Integer[]::new);
+    insertion.implement(arr, insertion::asc);
+
+    boolean testResult = TestUtil.isSame(arr, result);
+    assertThat(testResult, is(equalTo(true)));
+  }
+
+  @Test
+  public void insertionDescTest() {
+    Algorithms<Integer> insertion = new Insertion<>();
+    Integer[] result = Stream.of(arr)
+      .sorted(Comparator.comparing(Integer::intValue).reversed())
+      .toArray(Integer[]::new);
+    insertion.implement(arr, insertion::desc);
 
     boolean testResult = TestUtil.isSame(arr, result);
     assertThat(testResult, is(equalTo(true)));
