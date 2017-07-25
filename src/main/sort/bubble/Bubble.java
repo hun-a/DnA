@@ -11,7 +11,7 @@ public class Bubble<T> implements Algorithms<T> {
     bubbleSort(arr, predicate);
   }
 
-  private <T> T[] bubbleSort(T[] arr, BiPredicate<T, T> test) {
+  private <T> void bubbleSort(T[] arr, BiPredicate<T, T> test) {
     int listLength = arr.length;
     int boundary = listLength - 1;
 
@@ -24,6 +24,5 @@ public class Bubble<T> implements Algorithms<T> {
         }
       }
     }
-    return arr;
   }
 }
