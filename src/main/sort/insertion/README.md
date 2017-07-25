@@ -68,3 +68,19 @@
 장점과 같이 이미 정렬 되어 있을 경우 쓰면 좋겠다. (아이러니하네??)
 
 # 구현
+```java
+int[] arr = int[] arr = new int[]{ 9, 5, 7, 2, 8, 1 };
+int length = arr.length;
+
+for (int i = 1; i < length; i++) {
+  for (int j = i, compareIndex = (i - 1); j > 0; j--, compareIndex--) {
+    if (arr[compareIndex] <= arr[j]) {
+      break;
+    } else {
+      int temp = arr[compareIndex];
+      arr[compareIndex] = arr[j];
+      arr[j] = temp;
+    }
+  }
+}
+```java
