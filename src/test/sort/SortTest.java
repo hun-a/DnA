@@ -4,9 +4,6 @@ import main.sort.insertion.Insertion;
 import main.template.Algorithms;
 import org.junit.*;
 
-import java.util.Comparator;
-import java.util.stream.Stream;
-
 import main.sort.bubble.Bubble;
 import test.util.TestUtil;
 
@@ -22,44 +19,28 @@ public class SortTest {
   @Test
   public void bubbleAscTest() {
     Algorithms<Integer> bubble = new Bubble<>();
-    Integer[] result = Stream.of(arr).sorted().toArray(Integer[]::new);
-    bubble.implement(arr, bubble::asc);
-
-    boolean testResult = TestUtil.isSame(arr, result);
-    assertThat(testResult, is(equalTo(true)));
+    boolean result = TestUtil.testRunner(arr, bubble, bubble::asc);
+    assertThat(result, is(equalTo(true)));
   }
 
   @Test
   public void bubbleDescTest() {
     Algorithms<Integer> bubble = new Bubble<>();
-    Integer[] result = Stream.of(arr)
-      .sorted(Comparator.comparing(Integer::intValue).reversed())
-      .toArray(Integer[]::new);
-    bubble.implement(arr, bubble::desc);
-
-    boolean testResult = TestUtil.isSame(arr, result);
-    assertThat(testResult, is(equalTo(true)));
+    boolean result = TestUtil.testRunner(arr, bubble, bubble::desc);
+    assertThat(result, is(equalTo(true)));
   }
 
   @Test
   public void insertionAscTest() {
     Algorithms<Integer> insertion = new Insertion<>();
-    Integer[] result = Stream.of(arr).sorted().toArray(Integer[]::new);
-    insertion.implement(arr, insertion::asc);
-
-    boolean testResult = TestUtil.isSame(arr, result);
-    assertThat(testResult, is(equalTo(true)));
+    boolean result = TestUtil.testRunner(arr, insertion, insertion::asc);
+    assertThat(result, is(equalTo(true)));
   }
 
   @Test
   public void insertionDescTest() {
     Algorithms<Integer> insertion = new Insertion<>();
-    Integer[] result = Stream.of(arr)
-      .sorted(Comparator.comparing(Integer::intValue).reversed())
-      .toArray(Integer[]::new);
-    insertion.implement(arr, insertion::desc);
-
-    boolean testResult = TestUtil.isSame(arr, result);
-    assertThat(testResult, is(equalTo(true)));
+    boolean result = TestUtil.testRunner(arr, insertion, insertion::desc);
+    assertThat(result, is(equalTo(true)));
   }
 }
