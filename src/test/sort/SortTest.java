@@ -2,6 +2,7 @@ package test.sort;
 
 import main.sort.insertion.Insertion;
 import main.sort.selection.Selection;
+import main.sort.shell.Shell;
 import main.template.Algorithms;
 import org.junit.*;
 
@@ -56,6 +57,20 @@ public class SortTest {
   public void selectionDescTest() {
     Algorithms<Integer> selection = new Selection<>();
     boolean result = TestUtil.testRunner(arr, selection, selection::desc);
+    assertThat(result, is(equalTo(true)));
+  }
+
+  @Test
+  public void shellAscTest() {
+    Algorithms<Integer> shell = new Shell<>();
+    boolean result = TestUtil.testRunner(arr, shell, shell::asc);
+    assertThat(result, is(equalTo(true)));
+  }
+
+  @Test
+  public void shellDescTest() {
+    Algorithms<Integer> shell = new Shell<>();
+    boolean result = TestUtil.testRunner(arr, shell, shell::desc);
     assertThat(result, is(equalTo(true)));
   }
 }
