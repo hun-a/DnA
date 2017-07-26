@@ -9,7 +9,7 @@ Implement many algorithms as my style
 - Basic sorts
   - [Insertion Sort](src/main/sort/insertion/README.md)
   - [Selection Sort](src/main/sort/selection/README.md)
-  - Shell sort
+  - [Shell sort](src/main/sort/shell/README.md)
 - Fast sorts
   - Quick sort
   - Merge sort
