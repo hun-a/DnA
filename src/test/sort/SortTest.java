@@ -1,6 +1,7 @@
 package test.sort;
 
 import main.sort.insertion.Insertion;
+import main.sort.selection.Selection;
 import main.template.Algorithms;
 import org.junit.*;
 
@@ -41,6 +42,20 @@ public class SortTest {
   public void insertionDescTest() {
     Algorithms<Integer> insertion = new Insertion<>();
     boolean result = TestUtil.testRunner(arr, insertion, insertion::desc);
+    assertThat(result, is(equalTo(true)));
+  }
+
+  @Test
+  public void selectionAscTest() {
+    Algorithms<Integer> selection = new Selection<>();
+    boolean result = TestUtil.testRunner(arr, selection, selection::asc);
+    assertThat(result, is(equalTo(true)));
+  }
+
+  @Test
+  public void selectionDescTest() {
+    Algorithms<Integer> selection = new Selection<>();
+    boolean result = TestUtil.testRunner(arr, selection, selection::desc);
     assertThat(result, is(equalTo(true)));
   }
 }
