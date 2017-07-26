@@ -59,3 +59,21 @@
 정렬하려는 요소의 갯수가 작을 경우 쓰면 좋다. 아니라면 쓰지 말자.
 
 # 구현
+```java
+int[] arr = {11, 2, 53, 1, 4, 9};
+int length = arr.length;
+
+for (int i = 0; i < length - 1; i++) {
+	int compareTargetIndex = i;
+	for (int j = i + 1; j < length; j++) {
+		if (arr[compareTargetIndex] > arr[j]) {
+			compareTargetIndex = j;
+		}
+	}
+	if (arr[i] > arr[compareTargetIndex]) {
+		int temp = arr[i];
+		arr[i] = arr[compareTargetIndex];
+		arr[compareTargetIndex] = temp;
+	}
+}
+```
