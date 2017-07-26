@@ -69,7 +69,7 @@
 
 # 구현
 ```java
-int[] arr = int[] arr = new int[]{ 9, 5, 7, 2, 8, 1 };
+int[] arr = new int[]{ 9, 5, 7, 2, 8, 1 };
 int length = arr.length;
 
 for (int i = 1; i < length; i++) {
