@@ -5,10 +5,10 @@
 Implement many algorithms as my style
 
 
-## [Sort](src/main/sort/README.md)
+## Sort
 - Basic sorts
   - [Insertion Sort](src/main/sort/insertion/README.md)
-  - Selection Sort
+  - [Selection Sort](src/main/sort/selection/README.md)
   - Shell sort
 - Fast sorts
   - Quick sort
