@@ -1,11 +1,13 @@
-# algorithms
+# DnA
 
 [![Build Status](https://travis-ci.org/seunghun-kim/algorithms.svg?branch=develop)](https://travis-ci.org/seunghun-kim/algorithms)
 
-Implement many algorithms as my style
+Data structures And Algorithms!
 
+## Data Structures
 
-## Sort
+## Algorithms
+### Sort
 - Basic sorts
   - [Insertion Sort](src/main/sort/insertion/README.md)
   - [Selection Sort](src/main/sort/selection/README.md)
