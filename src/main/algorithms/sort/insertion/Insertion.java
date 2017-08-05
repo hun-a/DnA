@@ -1,4 +1,4 @@
-package main.sort.insertion;
+package main.algorithms.sort.insertion;
 
 import main.template.Algorithms;
 

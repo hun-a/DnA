@@ -1,12 +1,12 @@
-package test.sort;
+package test.algorithms.sort;
 
-import main.sort.insertion.Insertion;
-import main.sort.selection.Selection;
-import main.sort.shell.Shell;
+import main.algorithms.sort.insertion.Insertion;
+import main.algorithms.sort.selection.Selection;
+import main.algorithms.sort.shell.Shell;
 import main.template.Algorithms;
 import org.junit.*;
 
-import main.sort.bubble.Bubble;
+import main.algorithms.sort.bubble.Bubble;
 import test.util.TestUtil;
 
 import static org.hamcrest.MatcherAssert.*;

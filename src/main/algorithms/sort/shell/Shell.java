@@ -1,4 +1,4 @@
-package main.sort.shell;
+package main.algorithms.sort.shell;
 
 import main.template.Algorithms;
 

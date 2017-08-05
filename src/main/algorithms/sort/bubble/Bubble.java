@@ -1,4 +1,4 @@
-package main.sort.bubble;
+package main.algorithms.sort.bubble;
 
 import main.template.Algorithms;
 

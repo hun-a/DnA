@@ -6,6 +6,9 @@ Data structures And Algorithms!
 
 ## Data Structures
 ### Recursion
+- Factorial
+- Fibonacci
+- Hanoi
 ### Sequential data structures
 ### Linked data structures
 ### Stack

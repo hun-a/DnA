@@ -1,4 +1,4 @@
-package main.sort.selection;
+package main.algorithms.sort.selection;
 
 import main.template.Algorithms;
 
