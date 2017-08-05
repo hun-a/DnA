@@ -5,6 +5,16 @@
 Data structures And Algorithms!
 
 ## Data Structures
+### Recursion
+### Sequential data structures
+### Linked data structures
+### Stack
+### Queue
+### Tree
+- Binary Tree
+- Heap Tree
+- B Tree
+### Graph
 
 ## Algorithms
 ### Sort
@@ -18,3 +28,7 @@ Data structures And Algorithms!
   - Heap sort
 - Bad sorts
   - [Bubble sort](src/main/sort/bubble/README.md)
+### Search
+- Sequential Search
+- Binary Search
+- Hashing
