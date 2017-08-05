@@ -6,7 +6,7 @@ Data structures And Algorithms!
 
 ## Data Structures
 ### Recursion
-- Factorial
+- [Factorial](src/main/datastructures/recursion/factorial/README.md)
 - Fibonacci
 - Hanoi
 ### Sequential data structures
@@ -22,15 +22,15 @@ Data structures And Algorithms!
 ## Algorithms
 ### Sort
 - Basic sorts
-  - [Insertion Sort](src/main/sort/insertion/README.md)
-  - [Selection Sort](src/main/sort/selection/README.md)
-  - [Shell sort](src/main/sort/shell/README.md)
+  - [Insertion Sort](src/main/algorithms/sort/insertion/README.md)
+  - [Selection Sort](src/main/algorithms/sort/selection/README.md)
+  - [Shell sort](src/main/algorithms/sort/shell/README.md)
 - Fast sorts
   - Quick sort
   - Merge sort
   - Heap sort
 - Bad sorts
-  - [Bubble sort](src/main/sort/bubble/README.md)
+  - [Bubble sort](src/main/algorithms/sort/bubble/README.md)
 ### Search
 - Sequential Search
 - Binary Search
