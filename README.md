@@ -6,8 +6,10 @@ Data structures And Algorithms!
 ## Data Structures
 ### Sequential data structures
 ### Linked data structures
-### Stack
 ### Queue
+- [Stack](src/main/datastructures/stack/README.md)
+- Queue
+- Dequeue
 ### Tree
 - Binary Tree
 - Heap Tree
