@@ -12,23 +12,35 @@ public class Stack<T> {
     this.max = max;
   }
 
-  public T pop() {
-    return null;
+  public T pop() throws StackUnderFlow {
+    if (isEmpty()) {
+      throw new StackUnderFlow();
+    } else {
+      return stack.remove(--position);
+    }
   }
 
-  public void push(T t) {
-
+  public void push(T t) throws StackOverFlow {
+    if (isFull()) {
+      throw new StackOverFlow();
+    } else {
+      stack.add(t);
+      position++;
+    }
   }
 
-  public T peek() {
-    return null;
+  public T peek() throws StackUnderFlow {
+    if (isEmpty()) {
+      throw new StackUnderFlow();
+    }
+    return stack.get(--position);
   }
 
   private boolean isEmpty() {
     return stack.isEmpty();
   }
 
-  private  boolean isFull() {
-    return position + 1 == max;
+  private boolean isFull() {
+    return stack.size() == max;
   }
 }
