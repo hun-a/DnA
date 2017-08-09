@@ -1,6 +1,6 @@
 # DnA
 
-[![Build Status](https://travis-ci.org/seunghun-kim/algorithms.svg?branch=develop)](https://travis-ci.org/seunghun-kim/algorithms)
+[![Build Status](https://travis-ci.org/seunghun-kim/DnA.svg?branch=develop)](https://travis-ci.org/seunghun-kim/DnA)
 
 Data structures And Algorithms!
 
