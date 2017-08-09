@@ -1,6 +1,6 @@
-package test.datastructures.recursion;
+package test.algorithms.recursion;
 
-import main.datastructures.recursion.factorial.Factorial;
+import main.algorithms.recursion.factorial.Factorial;
 import org.junit.Test;
 
 import static org.hamcrest.MatcherAssert.*;

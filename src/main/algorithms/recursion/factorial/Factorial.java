@@ -1,4 +1,4 @@
-package main.datastructures.recursion.factorial;
+package main.algorithms.recursion.factorial;
 
 /**
  * Created by hun on 06/08/17.
